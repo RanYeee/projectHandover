@@ -40,7 +40,7 @@ js端通过prompt的形式发送端口和json参数给OC，OC通过 `runJavaScri
 
 接收js数据，并且判断js指令，详细交互和接口看 “电子处方JS与原生交互规则.docx”！
 
-若需要增加与H5交互的原生接口，可以新建类并且继承`WKBaseWebViewController`
+若需要增加与H5交互的原生接口，建议创建`WKBaseWebViewController`的分类
 
 实现`- (void)excusePromptWithPrompt:(NSString *)prompt;`该方法来接收js传给OC的指令。
 
