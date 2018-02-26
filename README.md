@@ -34,5 +34,9 @@
 -(void)onCompleteWithPort:(NSString *)port resultData:(NSString *)resultData Complete:(CallBackComplete)completeBlock;
 ```
 
+#### OC接收JS的指令：
 
+js端通过prompt的形式发送端口和json参数给OC，OC通过 `runJavaScriptTextInputPanelWithPrompt`
+
+接收js数据，并且判断js指令，详细交互看 “电子处方JS与原生交互规则.docx”
 
